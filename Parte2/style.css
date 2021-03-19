@@ -1,73 +1,105 @@
 header {
-
-
+  display: flex;
+  justify-content: space-around;
 }
 
 
 h2 {
-
+  border: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 33%
 }
 
 .nav {
+  display: flex;
+  justify-content: space-around;
+}
 
+li {
+  border: solid;
+  border-width: 1px;
+  list-style: none;
+  width: 18%;
+  text-align: center;
+}
 
-  }
-
-  li {
-
-
-  }
-
-  .content{
+.content{
+  border: solid;
+  border-width: 1px;
+  display: flex;
 
 }
 
-  .aside {
+.aside {
+  border: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 180%;
+}
 
-  }
+.slidebox{
+  border: solid;
+  border-width: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+}
 
-  .slidebox{
-
-   
-  }
-
-  .article{
-
-  }
+.article{
+  display: flex;
+  flex-direction: row;
+}
 
 
 .poem{
-
+  border: solid;
+  border-width: 1px;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
-  @media (min-width:600px) and (max-width: 990px)  {
-    .article {
+@media (min-width:600px) and (max-width: 990px)  {
 
+  .article {
+    display: flex;
+    flex-direction: column;
   } 
-header{
 
-}
+  header{
+    display: none;
+  }
+
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
-header,.content{
+  header,.content{
+    display: none;
+  }
 
-}
-
-.nav {
-
-
+  .nav {
+    display: flex;
+    flex-direction: column;
   }
 
 
-.nav > li {
-
-}
+  .nav > li {
+    list-style: none;
+    border: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin: 40px;
+    width: auto;
+  }
 
 
 }
